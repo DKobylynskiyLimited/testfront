@@ -26,7 +26,7 @@ module.exports = function () {
   /** @type {import('next').NextConfig} */
   let config = {
     transpilePackages,
-    output: 'export',
+    trailingSlash: true,
     experimental: {
       forceSwcTransforms: true,
       //   swcPlugins: [['react-native-reanimated-swc-plugin']],
